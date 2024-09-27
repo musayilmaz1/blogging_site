@@ -1,0 +1,45 @@
+/* Kategori ve son blog listesi için genel stil */
+ul.list-group {
+    padding: 0;
+    margin: 0;
+}
+
+/* Liste öğelerinin hover animasyonu */
+.list-group-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px; /* Kenarları yuvarlat */
+    margin-bottom: 10px; /* Elemanlar arasında boşluk */
+}
+
+.list-group-item:hover {
+    transform: translateX(5px); /* Üstüne gelindiğinde sağa doğru hafif hareket */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Liste elemanları için link stili */
+.list-group-item a {
+    text-decoration: none;
+    color: #333; /* Yazı rengi */
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.list-group-item a:hover {
+    color: #007bff; /* Üstüne gelindiğinde renk değişimi */
+}
+
+/* Başlıkların stili */
+h2, h5 {
+    font-weight: 700;
+    color: #343a40;
+}
+
+/* Liste öğeleri arasında aralık ve renk */
+.category-list .list-group-item {
+    background-color: #f8f9fa; /* Hafif gri arka plan */
+}
+
+.recent-blog-list .list-group-item {
+    background-color: #ffffff; /* Beyaz arka plan */
+}

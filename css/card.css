@@ -1,0 +1,26 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş süresini ve gölge değişimini ekledik */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Kart yukarı kayar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Hover sırasında gölge ekler */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem; /* Başlık boyutunu ayarlayın */
+}
+
+.card-text {
+    font-size: 1rem; /* Açıklama boyutunu ayarlayın */
+}
+
+.btn {
+    transition: background-color 0.3s, color 0.3s; /* Buton için geçiş */
+}
+
+.btn:hover {
+    background-color: #007bff; /* Hover rengini ayarlayın */
+    color: white; /* Buton hover sırasında metin rengini ayarlayın */
+}

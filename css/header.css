@@ -1,0 +1,67 @@
+/* Genel Navbar ayarları */
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff !important; /* Linklerin beyaz görünmesi */
+    margin-left: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+    font-weight: 500;
+    color: #ffffff !important; /* Dropdown menü başlığı beyaz */
+}
+
+/* Dropdown menü stilleri */
+.dropdown-menu {
+    background-color: #343a40; /* Koyu arka plan */
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000000 !important; /* Açık renkli yazı (beyaz) */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; /* Hover arka plan */
+    color: #000000 !important; /* Hover durumda da beyaz yazı rengi */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2888, 88, 88, 0.7%29' stroke-width='3' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Dropdown menü için küçük ekranlar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .dropdown-menu {
+        text-align: left;
+    }
+}
